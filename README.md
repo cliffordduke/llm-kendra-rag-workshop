@@ -165,8 +165,21 @@ Enter following questions for testing
    <img width="1234" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/16916855-2d70-4179-9ae8-3ef27b38500d">
 
 
-  
+## Lab 2 - Langchain with Kendra and 
 
+1. Open a terminal in Jupyter
 
+![Opening new terminal in Jupyter](assets/01_jupyter_terminal.png)
 
+2. Clone the workshop repository using the following terminal commands
 
+```sh
+cd SageMaker
+git clone https://github.com/cliffordduke/llm-kendra-rag-workshop.git
+```
+
+![Git clone repository](assets/02_git_clone.png)
+
+3. Navigate back to the Jupyter browser and into the cloned workshop folder, open the `kendra-langchain.ipynb` notebook. Make sure it us running the `conda_python3` kernel
+
+![Open Notebook](assets/02_open_notebook.png)
