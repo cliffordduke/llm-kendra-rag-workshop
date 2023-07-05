@@ -94,7 +94,7 @@ Login to [Event Engine](https://dashboard.eventengine.run) (https://dashboard.ev
 ### Step 4. Import data to kendra from AWS S3
 + Download the archive containing a list of AWS white papers
 ```javascript
-  cd ~
+  cd ~/environment
   wget https://jameschiang1001.s3.amazonaws.com/AWS_Whitepapers.zip
   unzip AWS_Whitepapers.zip
   ```
@@ -183,3 +183,11 @@ git clone https://github.com/cliffordduke/llm-kendra-rag-workshop.git
 3. Navigate back to the Jupyter browser and into the cloned workshop folder, open the `kendra-langchain.ipynb` notebook. Make sure it us running the `conda_python3` kernel
 
 ![Open Notebook](assets/02_open_notebook.png)
+
+We will leverage the previous labs Kendra Index for demonstration purposes, in order for this notebook to work, please add `AmazonKendraFullAccess` policy to the IAM role
+
+4. Navigate to your notebook instance `https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2#/notebook-instances/` and open the associated IAM Role
+![Notebook instance](assets/lab2/01_notebook_instance.png)
+
+5. Attach the `AmazonKendraFullAccess` policy to the role
+![Notebook instance](assets/lab2/02_permissions.png)
